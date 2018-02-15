@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'style/style.css' : 'sass/style.scss'
+          'style/style.css': 'sass/style.scss'
         }
       }
     },
@@ -13,12 +13,12 @@ module.exports = function(grunt) {
         files: '**/*.scss',
         tasks: ['sass'],
         options: {
-          livereload: true,
-          },
-      },
+          livereload: true
+        }
+      }
     }
   });
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('default',['sass', 'watch']);
-}
+  grunt.registerTask('default', ['sass', 'watch']);
+};
